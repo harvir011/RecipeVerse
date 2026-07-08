@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RecipeVerse — A Kitchen Journal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand brand-mark" href="#home">Recipe<span class="dot">&amp;</span>Verse</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a class="nav-link nav-link-custom active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#recipes">Recipes</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <a href="#recipes" class="btn btn-paprika btn-sm">Start Cooking</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="container pt-5 ">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="hero-eyebrow">Slow mornings, good broth, better company</span>
+        <h1 class="hero-title mt-3 mb-4">Recipes worth <em>lingering</em> over</h1>
+        <p class="hero-desc mb-4">Recipe &amp; Verse is a kitchen journal of unfussy, well-tested recipes — from Sunday-morning breakfasts to weeknight dinners that actually make it to the table on time.</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="#recipes" class="btn btn-paprika">Browse Recipes <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="#newsletter" class="btn btn-outline-ink">Join the Journal</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-img-wrap">
+          <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1000&q=80" alt="Fresh seasonal spread on a rustic table">
+          <div class="hero-badge-float"><i class="bi bi-egg-fried"></i> 200+ tested recipes</div>
+          <div class="hero-sticker">
+            <div class="stars mb-1">★★★★★</div>
+            <div class="fw-semibold small">"Turned my weeknight cooking around."</div>
+            <div class="text-muted mono" style="font-size:.7rem;">— Priya, home cook</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CATEGORIES -->
+<section id="categories" class="pt-4">
+  <div class="container">
+    <span class="section-tag">What are we making</span>
+    <h2 class="mt-2 mb-1" style="font-size:2rem;">Pick a moment of the day</h2>
+    <div class="cat-scroll">
+      <div class="cat-pill active"><i class="bi bi-sunrise"></i> Breakfast</div>
+      <div class="cat-pill"><i class="bi bi-cup-hot"></i> Lunch</div>
+      <div class="cat-pill"><i class="bi bi-moon-stars"></i> Dinner</div>
+      <div class="cat-pill"><i class="bi bi-basket"></i> Snacks</div>
+      <div class="cat-pill"><i class="bi bi-cake2"></i> Desserts</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED RECIPES -->
+<section id="recipes">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-3 mb-4">
+      <div>
+        <span class="section-tag">From the journal</span>
+        <h2 class="mt-2 mb-0" style="font-size:2.1rem;">Featured recipes</h2>
+      </div>
+      <!-- <p class="text-muted mb-0" style="max-width:340px;">A rotating shelf of favorites — tried, tweaked, and written down properly this time.</p> -->
+    </div>
+
+    <div class="row g-4 pt-3">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="recipe-card">
+          <div class="recipe-img-wrap">
+            <img src="images/corn and herb salad.jpg" alt="Herb salad bowl">
+            <span class="cat-chip">Lunch</span>
+            <div class="time-dial"><span>18</span><small>min</small></div>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-name">Charred Corn &amp; Herb Salad</div>
+            <div class="peppers"><i class="bi bi-fire"></i><i class="bi bi-fire faded"></i><i class="bi bi-fire faded"></i> <span class="text-muted small ms-1">Easy</span></div>
+            <div class="recipe-footer">
+              <span class="mono text-muted" style="font-size:.75rem;">Serves 2</span>
+              <a href="#" class="view-recipe">View Recipe <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="recipe-card">
+          <div class="recipe-img-wrap">
+            <img src="images/Blistered Margherita Pizza.jpg" alt="Wood fired pizza">
+            <span class="cat-chip">Dinner</span>
+            <div class="time-dial"><span>45</span><small>min</small></div>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-name">Blistered Margherita Pizza</div>
+            <div class="peppers"><i class="bi bi-fire"></i><i class="bi bi-fire"></i><i class="bi bi-fire faded"></i> <span class="text-muted small ms-1">Medium</span></div>
+            <div class="recipe-footer">
+              <span class="mono text-muted" style="font-size:.75rem;">Serves 4</span>
+              <a href="#" class="view-recipe">View Recipe <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="recipe-card">
+          <div class="recipe-img-wrap">
+            <img src="images/pancakes.jpg">
+            <span class="cat-chip">Breakfast</span>
+            <div class="time-dial"><span>15</span><small>min</small></div>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-name">Buttermilk Pancake Stack</div>
+            <div class="peppers"><i class="bi bi-fire"></i><i class="bi bi-fire faded"></i><i class="bi bi-fire faded"></i> <span class="text-muted small ms-1">Easy</span></div>
+            <div class="recipe-footer">
+              <span class="mono text-muted" style="font-size:.75rem;">Serves 3</span>
+              <a href="#" class="view-recipe">View Recipe <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="recipe-card">
+          <div class="recipe-img-wrap">
+            <img src="images/Pan-Seared Steak & Greens.jpg" alt="Seared steak dinner">
+            <span class="cat-chip">Dinner</span>
+            <div class="time-dial"><span>35</span><small>min</small></div>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-name">Pan-Seared Steak &amp; Greens</div>
+            <div class="peppers"><i class="bi bi-fire"></i><i class="bi bi-fire"></i><i class="bi bi-fire"></i> <span class="text-muted small ms-1">Hard</span></div>
+            <div class="recipe-footer">
+              <span class="mono text-muted" style="font-size:.75rem;">Serves 2</span>
+              <a href="#" class="view-recipe">View Recipe <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="recipe-card">
+          <div class="recipe-img-wrap">
+            <img src="images/Crispy Chickpea Bites.jpg" alt="Crispy snack bites">
+            <span class="cat-chip">Snacks</span>
+            <div class="time-dial"><span>20</span><small>min</small></div>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-name">Crispy Chickpea Bites</div>
+            <div class="peppers"><i class="bi bi-fire"></i><i class="bi bi-fire faded"></i><i class="bi bi-fire faded"></i> <span class="text-muted small ms-1">Easy</span></div>
+            <div class="recipe-footer">
+              <span class="mono text-muted" style="font-size:.75rem;">Serves 4</span>
+              <a href="#" class="view-recipe">View Recipe <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="recipe-card">
+          <div class="recipe-img-wrap">
+            <img src="images/Dark Chocolate Tart.jpg" alt="Chocolate dessert">
+            <span class="cat-chip">Desserts</span>
+            <div class="time-dial"><span>50</span><small>min</small></div>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-name">Dark Chocolate Tart</div>
+            <div class="peppers"><i class="bi bi-fire"></i><i class="bi bi-fire faded"></i><i class="bi bi-fire faded"></i> <span class="text-muted small ms-1">Easy</span></div>
+            <div class="recipe-footer">
+              <span class="mono text-muted" style="font-size:.75rem;">Serves 6</span>
+              <a href="#" class="view-recipe">View Recipe <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="recipe-card">
+          <div class="recipe-img-wrap">
+            <img src="images/Citrus Avocado Salad.jpg" alt="Fresh green salad">
+            <span class="cat-chip">Lunch</span>
+            <div class="time-dial"><span>12</span><small>min</small></div>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-name">Citrus Avocado Salad</div>
+            <div class="peppers"><i class="bi bi-fire"></i><i class="bi bi-fire faded"></i><i class="bi bi-fire faded"></i> <span class="text-muted small ms-1">Easy</span></div>
+            <div class="recipe-footer">
+              <span class="mono text-muted" style="font-size:.75rem;">Serves 2</span>
+              <a href="#" class="view-recipe">View Recipe <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="recipe-card">
+          <div class="recipe-img-wrap">
+            <img src="images/Ricotta & Fig Toast.jpg" alt="Breakfast toast spread">
+            <span class="cat-chip">Breakfast</span>
+            <div class="time-dial"><span>10</span><small>min</small></div>
+          </div>
+          <div class="recipe-body">
+            <div class="recipe-name">Ricotta &amp; Fig Toast</div>
+            <div class="peppers"><i class="bi bi-fire"></i><i class="bi bi-fire faded"></i><i class="bi bi-fire faded"></i> <span class="text-muted small ms-1">Easy</span></div>
+            <div class="recipe-footer">
+              <span class="mono text-muted" style="font-size:.75rem;">Serves 1</span>
+              <a href="#" class="view-recipe">View Recipe <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="pt-2">
+  <div class="container">
+    <span class="section-tag">From the community</span>
+    <h2 class="mt-2 mb-4" style="font-size:2rem;">Cooks who came back for seconds</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <i class="bi bi-quote"></i>
+          <p class="mt-2 mb-4">The steak recipe finally taught me how to get a proper crust. My kitchen smells like a bistro now.</p>
+          <div class="d-flex align-items-center gap-3">
+            <div class="avatar-circle">A</div>
+            <div>
+              <div class="fw-semibold">Aarav Mehta</div>
+              <div class="text-muted small">Home cook, Delhi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <i class="bi bi-quote"></i>
+          <p class="mt-2 mb-4">Easy to follow, honest cook times, and the pancake recipe is now a Sunday ritual in our house.</p>
+          <div class="d-flex align-items-center gap-3">
+            <div class="avatar-circle">S</div>
+            <div>
+              <div class="fw-semibold">Simran Kaur</div>
+              <div class="text-muted small">Food blogger</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <i class="bi bi-quote"></i>
+          <p class="mt-2 mb-4">The chocolate tart recipe was the first dessert I've ever nailed on the first try. No exaggeration.</p>
+          <div class="d-flex align-items-center gap-3">
+            <div class="avatar-circle">R</div>
+            <div>
+              <div class="fw-semibold">Rohan Verma</div>
+              <div class="text-muted small">Beginner baker</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter">
+  <div class="container">
+    <div class="newsletter">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <span class="mono" style="color:var(--turmeric); font-size:.75rem; letter-spacing:.15em; text-transform:uppercase;">The Sunday Ladle</span>
+          <h2 class="mt-3 mb-2" style="font-size:2rem;">One good recipe, every Sunday</h2>
+          <p class="mb-0" style="color:rgba(251,246,236,0.7);">No spam, no fluff — just a well-tested recipe and a short note from the kitchen.</p>
+        </div>
+        <div class="col-lg-6">
+          <form class="d-flex gap-2 flex-column flex-sm-row">
+            <input type="email" class="form-control" placeholder="you@example.com" required>
+            <button type="submit" class="btn btn-turmeric text-nowrap">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="brand-mark d-inline-block mb-3" href="#home" style="color:var(--paper);">Recipe</a><span class="dot">&amp;</span>Verse</a>
+        <p style="color:rgba(251,246,236,0.65); max-width:320px;">A small kitchen journal for people who'd rather cook well than cook fancy. Written, tested, and photographed from one home kitchen.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-circle"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-pinterest"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="social-circle"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>About</h6>
+        <a href="#home">Our Story</a>
+        <a href="#">The Kitchen</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#">Press</a>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Quick Links</h6>
+        <a href="#home">Home</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#categories">Categories</a>
+        <a href="#newsletter">Newsletter</a>
+      </div>
+      <div class="col-lg-4">
+        <h6>Get in Touch</h6>
+        <a href="mailto:hello@RecipeVerse.com"><i class="bi bi-envelope me-2"></i>hello@RecipeVerse.com</a>
+        <a href="#"><i class="bi bi-geo-alt me-2"></i>Patiala, Punjab, India</a>
+        <a href="#"><i class="bi bi-telephone me-2"></i>+91 98765 43210</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between gap-2">
+      <span>&copy; 2026 Recipe &amp; Verse. All rights reserved.</span>
+      <span>Privacy Policy &nbsp;·&nbsp; Terms of Use</span>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
